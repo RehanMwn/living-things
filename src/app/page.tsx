@@ -405,7 +405,16 @@ const VideoSection: React.FC = () => {
         <iframe
           width="900"
           height="500"
-          src="https://www.youtube.com/embed/5nANz3bBnTc"
+          src="<iframe
+          width="900"
+          height="500"
+          src="https://www.youtube.com/embed/SixmTdLBuZE"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="rounded-lg"
+        ></iframe>"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
