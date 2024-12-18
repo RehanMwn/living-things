@@ -505,7 +505,7 @@ const Footer: React.FC = () => {
 const LandingPage: React.FC = () => {
   return (
     <div className="font-sans">
-      <nav className="flex justify-between items-center px-6 py-4 shadow-md">
+      <nav className="flex flex-col md:flex-row justify-between items-center px-6 py-4 shadow-md">
         <div className="text-xl font-bold">
           <span className="text-black">Living Things</span>{" "}
           <span className="text-[#176B87]">Health</span>
@@ -551,7 +551,7 @@ const LandingPage: React.FC = () => {
         <img
           src="ewe.png"
           alt="Hero"
-          className="w-full h-full"
+          className="w-full h-full h-auto"
         />
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 flex flex-col justify-center items-start px-12 text-white">
           <h1 className="text-4xl font-bold">
