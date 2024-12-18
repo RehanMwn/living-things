@@ -456,6 +456,11 @@ const Footer: React.FC = () => {
               </a>
             </li>
             <li>
+              <a href="#animal-articles" className="hover:text-blue-500">
+                Animal Articles
+              </a>
+            </li>
+            <li>
               <a href="#hospital" className="hover:text-blue-500">
                 Hospital
               </a>
