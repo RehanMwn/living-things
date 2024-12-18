@@ -413,18 +413,26 @@ const VideoSection: React.FC = () => {
           className="rounded-lg"
         ></iframe>
       </div>
-      <div className="bg-blue-300 p-10 flex justify-between items-center">
-        <p className="text-lg font-bold text-white">
-          Register Now for News <br />
-          and Special Offer
-        </p>
-        <button 
-  className="bg-white text-blue-500 border border-blue-500 px-4 py-2 rounded-md"
-  onClick={() => window.location.href = '/register'}
->
-  Register Now
-</button>
-      </div>
+    </div>
+  );
+};
+
+const RegisterNowBanner = () => {
+  return (
+    <div className="bg-blue-300 p-10 flex justify-between items-center">
+      {/* Teks Kiri */}
+      <p className="text-lg font-bold text-white">
+        Register Now for News <br />
+        and Special Offer
+      </p>
+
+      {/* Tombol Register */}
+      <button
+        className="bg-white text-blue-500 border border-blue-500 px-4 py-2 rounded-md hover:bg-blue-500 hover:text-white transition duration-300"
+        onClick={() => window.location.href = '/register'}
+      >
+        Register Now
+      </button>
     </div>
   );
 };
@@ -655,6 +663,40 @@ const AnimalArticlesSection: React.FC = () => {
   );
 };
 
+const BootcampSection = () => {
+  return (
+    <div className="py-10 bg-white">
+      {/* Section Title */}
+      <h2 className="text-4xl font-extrabold text-center text-black mb-2">
+        Online Bootcamp
+      </h2>
+      <p className="text-gray-500 text-center text-lg mb-10">
+        With competent specialist doctors
+      </p>
+
+      {/* Flexbox Container for 2 Images */}
+      <div className="flex flex-col md:flex-row justify-center items-center px-4">
+        {/* Bootcamp 1 */}
+        <div className="shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="bootcamp1.png" // Ganti dengan path gambar asli
+            alt="Seminar Online Suicide Prevention"
+            className="w-full h-auto"
+          />
+        </div>
+
+        {/* Bootcamp 2 */}
+        <div className="shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="bootcamp2.png" // Ganti dengan path gambar asli
+            alt="Seminar Edukasi Penularan Darah"
+            className="w-full h-auto"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
 
 // Main Landing Page Component
 const LandingPage: React.FC = () => {
@@ -739,10 +781,13 @@ const LandingPage: React.FC = () => {
         </div>
       </header>
 
+
       <ArticlesSection />
       <AnimalArticlesSection />
       <HospitalSection />
       <VideoSection />
+      <BootcampSection />
+      <RegisterNowBanner />
       <Footer />
     </div>
   );
